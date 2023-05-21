@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                       // Close the bottom sheet
                       Navigator.of(context).pop();
                     },
-                    child: Text(id == null ? 'Create New' : 'Update'),
+                    child: Text(id == null ? 'Save' : 'Update'),
                   )
                 ],
               ),
