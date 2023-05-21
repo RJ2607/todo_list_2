@@ -27,4 +27,9 @@ class SQLHelper {
         conflictAlgorithm: sql.ConflictAlgorithm.replace);
     return id;
   }
+
+  static Future<List<Map<String, dynamic>>> getItems() async {
+    final db = await SQLHelper.db();
+    return db.query("items", orderBy: "id");
+  }
 }
